@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Movie</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contaner">
+    <header class="display text-center">
+      <h1>My Favorite Movies</h1>
+    </header>
+    <main class="text-center">
+      <form id="form">
+          <label>Title</label>
+          <input type="text" placeholder="Movie Title" id="form-title">                            
+          <label>Rating</label>
+          <input type="number" placeholder="Rate Movie from 0-10" id="form-rating" min="0" max="10">
+          <button type="submit">Add Movie</button>
+      </form>
+      <table class="table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th class="col-sm-5">
+              <div class="up">
+                <span>Title</span>
+                <div>
+                <a href="#">
+                  <span class="glyphicon glyphicon-arrow-down title-down"></span>
+                </a>
+                <a href="#">
+                  <span class="glyphicon glyphicon-arrow-up title-up"></span>
+                </a>
+                </div>
+              </div>
+            </th>
+            <th class="col-sm-3">
+              <div class="up">
+                <span>Rating</span>
+                <div>
+                <a href="#">
+                  <span class="glyphicon glyphicon-arrow-down rate-down"></span>
+                </a>
+                <a href="#">
+                  <span class="glyphicon glyphicon-arrow-up rate-up"></span>
+                </a>
+                </div>
+              </div>
+            </th>
+            <th class="col-sm-3">
+              Delete
+            </th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <script src="jquery-3.5.1.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
